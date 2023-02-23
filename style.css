@@ -2,20 +2,44 @@ body {
   background-image: url(background.jpg);
 }
 
-.container-fluid {
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(3.7px);
-  -webkit-backdrop-filter: blur(3.7px);
+.blur-background {
+height: 100vh;
+background: rgba(0, 0, 0, 0.21);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.1px);
+-webkit-backdrop-filter: blur(8.1px);
 }
 
 .img{
     border-radius: 10px;
     width: 26.875rem;
-    height: 13.125rem;
+    height: 18.75rem;
     margin-top: 0.625rem;
+}
+
+.form-control{
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+}
+
+.px-text{
+  color:#36ff80;
+}
+
+.rem-text{
+  color: #ff8036;
+}
+
+.percent-text{
+  color: #e436ff;
+}
+
+.output-text{
+  font-size: 4.375rem;
+}
+
+h2{
+  font-size: 2.5rem !important;
 }
 
