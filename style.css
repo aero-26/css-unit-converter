@@ -1,7 +1,9 @@
+/* For Setting Background image */
 body {
   background-image: url(images/background.jpg);
 }
 
+/* Maiking div blurred. */
 .blur-background {
 height: 100vh;
 background: rgba(0, 0, 0, 0.21);
@@ -11,6 +13,7 @@ backdrop-filter: blur(8.1px);
 -webkit-backdrop-filter: blur(8.1px);
 }
 
+/* To adjust the images */
 .img{
     border-radius: 10px;
     width: 26.875rem;

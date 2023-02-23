@@ -1,5 +1,8 @@
+// Creating variables to pick the elements. 
 let body = document.querySelector("body");
+let form = document.getElementsByClassName("form-control");
 
+// Restricting invalid inputs/keypresses.
 body.addEventListener("keydown", (event)=>{
     let key = Number(event.key);
     let keycode = event.keyCode;
@@ -13,5 +16,7 @@ body.addEventListener("keydown", (event)=>{
        event.preventDefault();
    }; 
 })
+
+
 
 
