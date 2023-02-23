@@ -6,12 +6,11 @@ body {
 /* Maiking div blurred. */
 .blur-background {
 height: 100vh;
-background: rgba(0, 0, 0, 0.21);
+background: rgba(0, 0, 0, 0.54);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(8.1px);
--webkit-backdrop-filter: blur(8.1px);
-}
+-webkit-backdrop-filter: blur(8.1px);}
 
 /* To adjust the images */
 .img{
