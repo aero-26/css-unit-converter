@@ -1,3 +1,25 @@
+@media screen and (max-width: 425px) {
+   #custom-h1{
+    font-size: 1.875rem !important;
+   } 
+    .img{
+    display: none;
+   } 
+   .card-height{
+    max-height: 9.625rem;
+   }
+   h2{
+    font-size: 1.5625rem !important;
+   }
+   .output-text{
+    font-size: 1.875rem;
+   }
+   .form-control{
+    padding-top: 10px !important;
+    padding-bottom: 5px !important;
+   }
+}
+
 @media screen and (max-width: 375px){
     #custom-h1{
         font-size: 1.5625rem !important;
