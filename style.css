@@ -55,6 +55,7 @@ h2 {
 
 h1 {
   font-size: xxx-large !important;
-  margin: 0.625rem 0 !important;
+  font-weight: bolder !important;
+  margin-top: 1.25rem !important;
   font-family: "Comfortaa", cursive;
 }
