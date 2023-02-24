@@ -1,0 +1,31 @@
+@media screen and (max-width: 425px) {
+  h1 {
+    font-size: 1.5625rem !important;
+    font-weight: bolder !important;
+    font-family: "Comfortaa", cursive;
+    margin: 0.9375rem 0 !important;
+  }
+  .img {
+    display: none;
+  }
+  h2 {
+    margin: 0.3125rem 0 !important;
+    font-size: 1.5625rem !important;
+  }
+  .form-control {
+    padding-top: 0.3125rem !important;
+    padding-bottom: 0.3125rem !important;
+  }
+  .card-height {
+    height: 29vh;
+  }
+  .output-text {
+    font-size: 2.5rem;
+  }
+  .form-div {
+    margin: 0.3125rem 0.3125rem;
+  }
+  .blur-background{
+    border-radius: 0rem;
+  }
+}
