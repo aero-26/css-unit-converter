@@ -31,7 +31,6 @@ body::-webkit-scrollbar {
 }
 
 .form-control {
-  background-color: red !important;
   padding-top: 0.75rem !important;
   padding-bottom: 0.75rem !important;
 }
