@@ -19,31 +19,69 @@ body.addEventListener("keydown", (event) => {
   }
 });
 
-// Calculation of values
+// Conversion of values
 form[0].addEventListener("keyup", () => {
+  //   Setting the values of other field to none.
   form[1].value = "";
   form[2].value = "";
+
+  //   Creating variables for calculation.
   let pxInput = form[0].value;
-  px.innerText = `${pxInput} px`;
-  rem.innerText = `${pxInput / 16} rem`;
-  percent.innerText = `${(pxInput / 16) * 100}%`;
+  let verify = Number(form[0].value);
+
+  //   Calculation of Values.
+  if (verify) {
+    px.innerText = `${pxInput} px`;
+    rem.innerText = `${pxInput / 16} rem`;
+    percent.innerText = `${(pxInput / 16) * 100}%`;
+  } else {
+    pxInput = 0;
+    px.innerText = `${pxInput} px`;
+    rem.innerText = `${pxInput} rem`;
+    percent.innerHTML = `${pxInput}%`;
+  }
 });
 
 form[1].addEventListener("keyup", () => {
+  //   Setting the values of other field to none.
   form[0].value = "";
   form[2].value = "";
+
+  //   Creating variables for calculation.
   let remInput = form[1].value;
-  rem.innerText = `${remInput} rem`;
-  px.innerText = `${16 * remInput} px`;
-  percent.innerText = `${100 * remInput}%`;
+  let verify = Number(form[1].value);
+
+  //   Calculation of Values.
+  if (verify) {
+    rem.innerText = `${remInput} rem`;
+    px.innerText = `${16 * remInput} px`;
+    percent.innerText = `${100 * remInput}%`;
+  } else {
+    remInput = 0;
+    px.innerText = `${remInput} px`;
+    rem.innerText = `${remInput} px`;
+    percent.innerText = `${remInput} px`;
+  }
 });
 
 form[2].addEventListener("keyup", () => {
+  //   Setting the values of other field to none.
   form[0].value = "";
   form[1].value = "";
+
+  //   Creating variables for calculation.
   let percentInput = form[2].value;
-  percent.innerText = `${percentInput}%`;
-  px.innerText = `${(percentInput / 100) * 16} px`;
-  rem.innerText = `${(percentInput / 100) * 1} rem`;
-  console.log(`vlaue of precent ${percent}`);
+  let verify = Number(form[2].value);
+
+  //   Calculation of Values.
+  if (verify) {
+    percent.innerText = `${percentInput}%`;
+    px.innerText = `${(percentInput / 100) * 16} px`;
+    rem.innerText = `${(percentInput / 100) * 1} rem`;
+  } else {
+    percentInput = 0;
+    percent.innerText = `${percentInput}%`;
+    px.innerText = `${percentInput} px`;
+    rem.innerText = `${percentInput} rem`;
+  }
 });
