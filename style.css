@@ -3,6 +3,11 @@ body {
   background-image: url(images/background.jpg);
 }
 
+/* For hiding the scrollbar. */
+body::-webkit-scrollbar {
+  display: none;
+}
+
 /* Maiking div blurred. */
 .blur-background {
   background: rgba(0, 0, 0, 0.54);
@@ -14,7 +19,7 @@ body {
 
 /* Virtical height for cards. */
 .card-height {
-  height: 87vh;
+  height: 85vh;
 }
 
 /* To adjust the images */
@@ -56,6 +61,6 @@ h2 {
 h1 {
   font-size: xxx-large !important;
   font-weight: bolder !important;
-  margin-top: 1.25rem !important;
+  margin-top: 1.875rem !important;
   font-family: "Comfortaa", cursive;
 }
