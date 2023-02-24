@@ -1,3 +1,4 @@
+alert("Changes Applied");
 // Creating variables to pick the elements.
 let body = document.querySelector("body");
 let form = document.getElementsByClassName("form-control");
