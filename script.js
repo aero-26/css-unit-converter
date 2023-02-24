@@ -4,6 +4,9 @@ let form = document.getElementsByClassName("form-control");
 let px = document.getElementById("px");
 let rem = document.getElementById("rem");
 let percent = document.getElementById("percent");
+let pxMsg = document.getElementById("px-msg");
+let remMsg = document.getElementById("rem-msg");
+let percentMsg = document.getElementById("percent-msg");
 
 // Restricting invalid inputs/keypresses.
 body.addEventListener("keydown", (event) => {
@@ -31,13 +34,13 @@ form[0].addEventListener("keyup", () => {
 
   //   Calculation of Values.
   if (verify) {
-    px.innerText = `${pxInput} px`;
-    rem.innerText = `${pxInput / 16} rem`;
+    px.innerText = `${pxInput}px`;
+    rem.innerText = `${pxInput / 16}rem`;
     percent.innerText = `${(pxInput / 16) * 100}%`;
   } else {
     pxInput = 0;
-    px.innerText = `${pxInput} px`;
-    rem.innerText = `${pxInput} rem`;
+    px.innerText = `${pxInput}px`;
+    rem.innerText = `${pxInput}rem`;
     percent.innerHTML = `${pxInput}%`;
   }
 });
@@ -53,14 +56,14 @@ form[1].addEventListener("keyup", () => {
 
   //   Calculation of Values.
   if (verify) {
-    rem.innerText = `${remInput} rem`;
-    px.innerText = `${16 * remInput} px`;
+    rem.innerText = `${remInput}rem`;
+    px.innerText = `${16 * remInput}px`;
     percent.innerText = `${100 * remInput}%`;
   } else {
     remInput = 0;
-    px.innerText = `${remInput} px`;
-    rem.innerText = `${remInput} px`;
-    percent.innerText = `${remInput} px`;
+    px.innerText = `${remInput}px`;
+    rem.innerText = `${remInput}px`;
+    percent.innerText = `${remInput}px`;
   }
 });
 
@@ -76,12 +79,39 @@ form[2].addEventListener("keyup", () => {
   //   Calculation of Values.
   if (verify) {
     percent.innerText = `${percentInput}%`;
-    px.innerText = `${(percentInput / 100) * 16} px`;
-    rem.innerText = `${(percentInput / 100) * 1} rem`;
+    px.innerText = `${(percentInput / 100) * 16}px`;
+    rem.innerText = `${(percentInput / 100) * 1}rem`;
   } else {
     percentInput = 0;
     percent.innerText = `${percentInput}%`;
-    px.innerText = `${percentInput} px`;
-    rem.innerText = `${percentInput} rem`;
+    px.innerText = `${percentInput}px`;
+    rem.innerText = `${percentInput}rem`;
   }
+});
+// Hide unhide copy message
+function showPxMsg () {
+  pxMsg.classList.toggle("copy-msg-hidden");
+}
+function showRemMsg () {
+  remMsg.classList.toggle("copy-msg-hidden");
+}
+function showPercentMsg (){
+  percentMsg.classList.toggle("copy-msg-hidden");
+}
+
+//  Creating click to copy function.
+px.addEventListener("click", () => {
+  navigator.clipboard.writeText(px.innerText);
+  pxMsg.classList.toggle("copy-msg-hidden");
+  setTimeout(showPxMsg, 1000);
+});
+rem.addEventListener("click", () => {
+  navigator.clipboard.writeText(rem.innerText);
+  remMsg.classList.toggle("copy-msg-hidden");
+  setTimeout(showRemMsg, 1000);
+});
+percent.addEventListener("click", () => {
+  navigator.clipboard.writeText(percent.innerText);
+  percentMsg.classList.toggle("copy-msg-hidden");
+  setTimeout(showPercentMsg, 1000);
 });

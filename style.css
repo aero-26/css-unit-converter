@@ -59,8 +59,12 @@ h2 {
 }
 
 h1 {
-  font-size: xxx-large !important;
+  font-size: 10px !important;
   font-weight: bolder !important;
   margin-top: 1.875rem !important;
   font-family: "Comfortaa", cursive;
+}
+
+.copy-msg-hidden{
+  display: none;
 }
