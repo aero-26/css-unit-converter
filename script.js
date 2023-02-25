@@ -89,13 +89,13 @@ form[2].addEventListener("keyup", () => {
   }
 });
 // Hide unhide copy message
-function showPxMsg () {
+function showPxMsg() {
   pxMsg.classList.toggle("copy-msg-hidden");
 }
-function showRemMsg () {
+function showRemMsg() {
   remMsg.classList.toggle("copy-msg-hidden");
 }
-function showPercentMsg (){
+function showPercentMsg() {
   percentMsg.classList.toggle("copy-msg-hidden");
 }
 
