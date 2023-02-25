@@ -10,3 +10,47 @@
     font-size: 2.5rem;
    }
 }
+
+@media screen and (max-width: 730px){
+   h2{
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+   }
+}
+
+@media  screen and (max-width: 682px){
+   h2{
+      font-size: 1.1875rem !important;
+   }
+}
+
+@media screen and (max-width: 668px) {
+   .img{
+      height: 8.75rem;
+      width: 11.875rem;
+   }
+}
+
+@media screen and (max-width: 653px){
+  h2{
+      font-size: 1.125rem !important;
+  } 
+  .img{
+      height: 8.125rem;
+      width: 11.25rem;
+  }
+}
+
+@media screen and (max-width: 634px){
+   h2{
+      font-weight: bold !important;
+      font-size: 1rem !important;
+   }
+}
+
+
+@media screen and (max-width: 610px){
+  .img{
+   width: 10.625rem;
+  } 
+}
