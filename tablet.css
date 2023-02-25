@@ -1,0 +1,12 @@
+@media screen and (max-width: 768px){
+   .img{
+    height: 9.375rem;
+    width: 12.5rem;
+   } 
+   h2{
+    font-size: 1.25rem !important; 
+   }
+   .output-text{
+    font-size: 2.5rem;
+   }
+}
