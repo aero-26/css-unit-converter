@@ -1,6 +1,7 @@
 @media screen and (max-width: 425px) {
    #custom-h1{
     font-size: 1.875rem !important;
+    margin-bottom: 1.25rem !important;
    } 
     .img{
     display: none;
@@ -17,6 +18,9 @@
    .form-control{
     padding-top: 10px !important;
     padding-bottom: 5px !important;
+   }
+   .blur-background{
+    border-radius: 0;
    }
 }
 
