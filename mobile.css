@@ -63,7 +63,7 @@
     display: none;
   }
   h2 {
-    margin: 0.3125rem 0 !important;
+    margin: 0 0 1px 0 !important;
     font-size: 1.5625rem !important;
   }
   .form-control {
@@ -74,6 +74,7 @@
     max-height: 8.75rem;
   }
   .copy-msg-hidden{
+    margin: 0px !important;
    font-size: 1px !important; 
   }
   .output-text {
